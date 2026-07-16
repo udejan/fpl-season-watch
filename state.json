@@ -1,0 +1,30 @@
+{
+  "baseline": {
+    "gw1_deadline_time": "2025-08-15T17:30:00Z",
+    "gw1_finished": true,
+    "teams": [
+      "Arsenal",
+      "Aston Villa",
+      "Bournemouth",
+      "Brentford",
+      "Brighton",
+      "Burnley",
+      "Chelsea",
+      "Crystal Palace",
+      "Everton",
+      "Fulham",
+      "Leeds",
+      "Liverpool",
+      "Man City",
+      "Man Utd",
+      "Newcastle",
+      "Nott'm Forest",
+      "Spurs",
+      "Sunderland",
+      "West Ham",
+      "Wolves"
+    ]
+  },
+  "last_checked": "2026-07-16T19:13:26.199221+00:00",
+  "notified_for_deadline": null
+}

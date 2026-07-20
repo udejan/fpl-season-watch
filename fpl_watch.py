@@ -75,6 +75,17 @@ def send_email(subject, body):
 def main():
     now = datetime.now(timezone.utc).isoformat()
 
+    if os.environ.get("TEST_EMAIL") == "true":
+        # Manual test hook: verifies SMTP secrets work end-to-end without
+        # touching state.json or waiting for a real season change.
+        send_email(
+            "FPL Season Watcher: test mejl",
+            "Ovo je probni mejl sa FPL Season Watcher-a.\n\n"
+            "Ako si ovo dobio, SMTP_USER / SMTP_PASS / TO_EMAIL secrets rade ispravno "
+            "i pravi mejl o novoj sezoni ce stici na isti nacin.",
+        )
+        return
+
     try:
         data = fetch_bootstrap()
     except Exception as e:
